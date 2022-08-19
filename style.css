@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+:root{
+    --section2: hsl(51, 100%, 49%); 
+    --White14:  hsl(0, 0%, 100%)
+    --Section3:  hsl(7, 99%, 70%);
+    --footer:  hsl(168, 34%, 41%);
+    --graphicdesign: hsl(167, 40%, 24%);
+    --photogr:  hsl(198, 62%, 26%);
+}
+html{
+    scroll-behavior: smooth;
+}
+/* utilities */
+.p-t{padding-top: 1.5rem;}
+.p-tt{padding-top: 2.5rem;}
+.p-b{padding-bottom: 1.5rem;}
+.p-b1{padding-bottom: 1.3rem;}
+.p-bb{padding-bottom: 2.5rem;}
+.p-lR{padding: 0 2rem;}
+/* marigin */
+.m-t{margin-top: 1.5rem;}
+.m-tt{margin-top: 2.5rem;}
+.m-b{margin-bottom: 1.5rem;}
+.m-lR{margin: 0 2rem;}
+.f-size{font-size: 2rem;opacity: 60%; text-align: center;}
+/* header */
+header{
+    background-image: url('/images/desktop/image-header.jpg');
+   background-position: center;
+   background-size: cover;
+   height: 100vh;
+   overflow: hidden;
+   /* background-attachment: fixed; */
+   /* display: flex;
+   flex-direction: column; */
+
+}
+.flex{
+    height: 70px;
+    align-items: center;
+   padding: 0 1.8rem;
+}
+.Flex-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    margin-right: 40px;
+}
+nav ul li{
+    margin-left: 20px;
+    
+}
+nav ul li a{
+    color: #fff;
+    font-weight: 500;
+}
+nav ul .Ctn{
+    padding: 10px;
+    transition: all 0.4s ;
+    border-radius: 10px;
+}
+nav ul .Ctn:hover{
+    background: cyan;
+    padding: 10px;
+    transition: all 0.4s ;
+    border-radius: 10px;
+    color: #000;
+}
+header .center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    /* flex-grow: 1; */
+}
+header .center h1{
+    color: #fff;
+}
+/* ============================ */
+
+/* main */
+#main{
+    min-height: 100%;
+}
+.container-flex{
+   display: flex;
+   justify-content: space-between;
+   height: 100%;
+}
+.flex-cont{
+    height: 100%;
+}
+.left-side{
+    flex: 1;
+   
+}
+.text-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+}
+.left-side p.learn{
+    font-weight: 900;
+    font-size: 1.4rem;
+}
+.left-side .text h2{
+    font-size: 2.5rem;
+}
+.left-side .text{
+    width: 70%;
+}
+.left-side img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.right-side{
+    flex: 1;
+}
+#main .right-side img{
+    object-fit: cover;
+}
+.right-side img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.section2 .right-side-img{
+    background: url('/images/desktop/image-graphic-design.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 60vh
+
+    /* display: block; */
+}
+.section2 .left-image{
+    background: url('/images/desktop/image-photography.jpg');
+    background-position: center;
+    background-size: cover;
+    min-height: 60vh;
+    background-repeat: no-repeat;
+}
+.right-side-img,
+.left-image{    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.col-7{
+    text-align: center;
+    width: 50%;
+}
+
+/* ======================= */
+/* /teams */
+.Teams{
+    padding-top: 100px;
+}
+.Teams .client{
+    text-transform: uppercase;
+}
+.Teams .Flex-container{
+    max-width: 1000px;
+    margin: 30px auto;
+    padding:  0 30px;
+    align-items: stretch;
+
+}
+.boxes:hover{
+    background: orange;
+    color: #fff;
+}
+.Teams img{
+    width: 60px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    margin-bottom: 40px;
+    border: 2px solid orange;
+}
+.boxes:hover img{
+    border: 2px solid #fff;
+}
+.boxes{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    margin: 10px 10px;
+    transition: all 0.4s;
+    display: flex;
+    flex-direction: column;
+}
+/* ================ */
+/* image gallery grid */
+.Flex-Grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    /* grid-template-columns: repeat(4, 1fr); */
+}
+.Flex-Grid img{
+    max-width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+}
+/* =============== */
+/* footer */
+footer{
+    background: var(--footer);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+footer div img{
+    margin-bottom: 20px;
+}
+footer ul{
+    display: flex;
+    margin-bottom: 20px;
+}
+footer ul li{
+    padding: 0 20px;
+}
+footer i{
+    font-size: 1.3rem;
+    margin: 0 8px;
+    padding: 5px;
+    transition: all 0.4s;
+    border-radius: 5px;
+}
+footer i:hover{
+    background: orange;
+    color: #fff;
+}
+footer ul li a{
+    color: #fff;
+    font-size: 1.3rem;
+    transition: all .4s;
+}
+footer ul li a:hover{
+    color: #333;
+}
+
+@media(max-width: 768px){
+    .Flex-container,
+    .row,
+    .container-flex,
+    .flex-cont{
+        order: 999;
+    }
+    .row,
+    .Flex-container{
+        flex-direction: column;
+        /* width: 100%; */
+    }
+    .container-flex{
+        flex-direction: column;
+    }
+    .left-side{
+        flex: 100%;
+       
+    }
+    .right-side{
+        flex: 100%;
+    }
+    #main .right-side{
+        order: -1;
+    }
+    .left-image,
+    .right-side-img{
+        height: 100%;
+    }
+    .text-content{
+        text-align: center;
+    }
+    .left-image .p-b{
+        padding-bottom: 1.3rem;
+        padding-top: 1.5rem;
+    }
+    .small{
+        margin-top: 20px !important;
+        font-size: 1.5rem !important;
+    }
+    p.learn{
+        padding-bottom: 1.3rem;
+    }
+ 
+    .right-side-img,
+    .left-image{    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* align-items: center; */
+}
+.col-7{
+    text-align: center;
+    width: 50%;
+}
+.col-7 .m-b{
+    margin-bottom: 1rem;
+}
+
+}
+@media(max-width: 340px){
+    nav ul li a{
+        font-size: 1rem;
+    }
+}
