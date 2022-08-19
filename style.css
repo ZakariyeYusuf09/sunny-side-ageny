@@ -47,7 +47,7 @@ header{
 .flex{
     height: 70px;
     align-items: center;
-   padding: 0 1.8rem;
+    padding: 0 1.8rem;
 }
 .Flex-container{
     display: flex;
@@ -262,12 +262,11 @@ footer ul li a:hover{
 }
 
 @media(max-width: 768px){
-    .Flex-container,
-    .row,
-    .container-flex,
-    .flex-cont{
-        order: 999;
+    nav ul{
+        display: flex;
+        margin-right: 0px;
     }
+  
     .row,
     .Flex-container{
         flex-direction: column;
