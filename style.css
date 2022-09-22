@@ -10,8 +10,8 @@
 }
 :root{
     --section2: hsl(51, 100%, 49%); 
-    --White14:  hsl(0, 0%, 100%)
-    --Section3:  hsl(7, 99%, 70%);
+    --White14:  hsl(0, 0%, 100%);
+    --hi:  hsl(7, 99%, 70%);
     --footer:  hsl(168, 34%, 41%);
     --graphicdesign: hsl(167, 40%, 24%);
     --photogr:  hsl(198, 62%, 26%);
@@ -20,6 +20,25 @@ html{
     scroll-behavior: smooth;
 }
 /* utilities */
+.learn{
+    position: relative;
+    cursor: pointer;
+}
+.learn::after{
+    content: '';
+    position: absolute;
+    width: 25%;
+    height: 20%;
+    background: linear-gradient(to bottom right, var(--photogr), var(--section2));
+    left: 0;
+    bottom: 2px;
+    z-index: -1;
+    transition: all 0.5s;
+    
+}
+.learn:hover::after{
+    height: 70%;
+}
 .p-t{padding-top: 1.5rem;}
 .p-tt{padding-top: 2.5rem;}
 .p-b{padding-bottom: 1.5rem;}
